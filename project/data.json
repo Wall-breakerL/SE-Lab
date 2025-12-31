@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "管理员",
+      "phone": "00000000000",
+      "role": "ADMIN",
+      "status": "NORMAL"
+    },
+    {
+      "id": 2,
+      "username": "wa",
+      "phone": "18015880008",
+      "role": "BUYER",
+      "status": "NORMAL"
+    }
+  ],
+  "products": [],
+  "orders": [],
+  "complaints": [],
+  "_id_counters": {
+    "users": 3,
+    "products": 1,
+    "orders": 1,
+    "complaints": 1
+  }
+}
