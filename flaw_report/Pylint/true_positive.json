@@ -1,0 +1,45 @@
+{
+    "1": {
+      "CWE": "N/A",
+      "name": "undefined-variable (E0602)",
+      "File": "storage.py",
+      "Line": "178",
+      "At": "status=OrderStatus.PAID"
+    },
+    "2": {
+      "CWE": "CWE-95",
+      "name": "eval-used (W0123)",
+      "File": "gui_views.py",
+      "Line": "228",
+      "At": "price = eval(self.price_var.get())"
+    },
+    "3": {
+      "CWE": "CWE-95",
+      "name": "eval-used (W0123)",
+      "File": "gui_views.py",
+      "Line": "229",
+      "At": "stock = eval(self.stock_var.get())"
+    },
+    "4": {
+      "CWE": "CWE-703",
+      "name": "bare-except (W0702)",
+      "File": "storage.py",
+      "Line": "49-50",
+      "At": "except:pass"
+    },
+    "5": {
+      "CWE": "CWE-772",
+      "name": "consider-using-with (R1732)",
+      "File": "storage.py",
+      "Line": "54",
+      "At": "f = open(...)"
+    },
+    "6": {
+      "CWE": "N/A",
+      "name": "unused-variable (W0612)",
+      "File": "gui_views.py",
+      "Line": "149",
+      "At": "user = self.app.auth_service.register(username, phone, role)"
+    }
+  }
+  

@@ -1,0 +1,42 @@
+{
+  "1": {
+    "CWE": "CWE-330",
+    "name": "B311 blacklist",
+    "File": "gui_views.py",
+    "Line": "28",
+    "At": "        code = f\"{random.randint(100000, 999999)}\"",
+    "Detail": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+    "Confidence": "HIGH",
+    "Severity": "LOW"
+  },
+  "2": {
+    "CWE": "CWE-78",
+    "name": "B307 blacklist",
+    "File": "gui_views.py",
+    "Line": "228",
+    "At": "            price = eval(self.price_var.get())",
+    "Detail": "Use of possibly insecure function - consider using safer ast.literal_eval.",
+    "Confidence": "HIGH",
+    "Severity": "MEDIUM"
+  },
+  "3": {
+    "CWE": "CWE-78",
+    "name": "B307 blacklist",
+    "File": "gui_views.py",
+    "Line": "229",
+    "At": "            stock = eval(self.stock_var.get())",
+    "Detail": "Use of possibly insecure function - consider using safer ast.literal_eval.",
+    "Confidence": "HIGH",
+    "Severity": "MEDIUM"
+  },
+  "4": {
+    "CWE": "CWE-703",
+    "name": "B110 try_except_pass",
+    "File": "storage.py",
+    "Line": "49",
+    "At": "            except:",
+    "Detail": "Try, Except, Pass detected.",
+    "Confidence": "HIGH",
+    "Severity": "LOW"
+  }
+}

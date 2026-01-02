@@ -1,0 +1,30 @@
+{
+  "1": {
+    "CWE": "N/A",
+    "name": "line-too-long (C0301)",
+    "File": "gui_views.py",
+    "Line": "47",
+    "At": "ttk.Label(...)"
+  },
+  "2": {
+    "CWE": "N/A",
+    "name": "missing-module-docstring (C0114)",
+    "File": "gui_views.py",
+    "Line": "1",
+    "At": "# gui_views.py"
+  },
+  "3": {
+    "CWE": "N/A",
+    "name": "too-many-arguments (R0913)",
+    "File": "services.py",
+    "Line": "42",
+    "At": "def publish_product( self,seller: User,title: str,category: str,condition: str,price: float,stock: int,description: str,contact: str,image_count: int = 1,)"
+  },
+  "4": {
+    "CWE": "N/A",
+    "name": "unused-argument (W0613)",
+    "File": "gui_views.py",
+    "Line": "444",
+    "At": "def on_product_double_click(self, event):"
+  }
+}

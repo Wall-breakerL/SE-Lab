@@ -1,0 +1,23 @@
+{
+  "1": {
+    "CWE": "CWE-89",
+    "name": "SQLInjection",
+    "File": "N/A",
+    "Line": "N/A",
+    "At": "LLM suspected SQL injection, but project uses JSON file storage and no SQL queries."
+  },
+  "2": {
+    "CWE": "CWE-79",
+    "name": "CrossSiteScripting",
+    "File": "N/A",
+    "Line": "N/A",
+    "At": "LLM suspected XSS, but this is a Tkinter desktop app (no HTML rendering)."
+  },
+  "3": {
+    "CWE": "N/A",
+    "name": "HTTPSRequiredForOTPTransport",
+    "File": "gui_views.py",
+    "Line": "N/A",
+    "At": "LLM suggested HTTPS for OTP transmission, but OTP is simulated locally via messagebox, not sent over network."
+  }
+}

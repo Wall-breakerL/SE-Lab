@@ -1,0 +1,5 @@
+# environment variables:
+AFL_KILL_SIGNAL=9
+AFL_SKIP_CPUFREQ=1
+# command line:
+'afl-fuzz' '-i' 'input_dir' '-o' 'output_dir' './vuln'

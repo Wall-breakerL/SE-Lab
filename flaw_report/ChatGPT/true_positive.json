@@ -1,0 +1,72 @@
+{
+  "1": {
+    "CWE": "CWE-95",
+    "name": "CodeInjectionViaEval",
+    "File": "gui_views.py",
+    "Line": "228-229",
+    "At": "price = eval(self.price_var.get()); stock = eval(self.stock_var.get())"
+  },
+  "2": {
+    "CWE": "CWE-703",
+    "name": "BareExceptSwallowLoadErrors",
+    "File": "storage.py",
+    "Line": "49-50",
+    "At": "except:pass"
+  },
+  "3": {
+    "CWE": "CWE-772",
+    "name": "FileHandleLeak",
+    "File": "storage.py",
+    "Line": "54",
+    "At": "f = open(...)  # not closed / no with-statement"
+  },
+  "4": {
+    "CWE": "CWE-200",
+    "name": "OTPLeakedToUI",
+    "File": "gui_views.py",
+    "Line": "69",
+    "At": "messagebox.showinfo('验证码已发送', f'验证码: {code} (模拟短信)')"
+  },
+  "5": {
+    "CWE": "CWE-330",
+    "name": "InsecureRandomOTP",
+    "File": "gui_views.py",
+    "Line": "66-70",
+    "At": "code = random.randint(100000, 999999)"
+  },
+  "6": {
+    "CWE": "CWE-307",
+    "name": "OTPNoExpiryNoRateLimitReusePossible",
+    "File": "gui_views.py",
+    "Line": "66-86",
+    "At": "sent_codes[phone] stored indefinitely; verify_code only checks equality"
+  },
+  "7": {
+    "CWE": "CWE-798",
+    "name": "HardcodedDefaultAdminAccount",
+    "File": "storage.py",
+    "Line": "70-85 (approx.)",
+    "At": "phone='00000000000' for default admin"
+  },
+  "8": {
+    "CWE": "CWE-20",
+    "name": "MissingValidationPriceStock",
+    "File": "services.py",
+    "Line": "54-70",
+    "At": "publish_product validates title/description/image_count but not price/stock/contact/category/condition"
+  },
+  "9": {
+    "CWE": "N/A",
+    "name": "OrderCreatedWithPaidStatusAndUndefinedOrderStatus",
+    "File": "storage.py",
+    "Line": "178",
+    "At": "status=OrderStatus.PAID  # OrderStatus may be undefined; logic starts as PAID"
+  },
+  "10": {
+    "CWE": "N/A",
+    "name": "DirectProtectedAccessSave",
+    "File": "services.py",
+    "Line": "75-80",
+    "At": "self.store._save()  # protected member called outside DataStore"
+  }
+}
